@@ -1,0 +1,20 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "serve:time": "http-server -c-1 -p 8080 . -o currentTime.html",
+    "serve:search": "http-server -c-1 -p 8080 . -o githubSearch.html"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/user-event": "^14.6.1",
+    "jsdom": "^26.1.0",
+    "vitest": "^3.1.1"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "better-sqlite3": "^11.9.1",
+    "http-server": "^14.1.1"
+  }
+}
