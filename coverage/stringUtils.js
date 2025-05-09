@@ -3,7 +3,7 @@
  * @param {string} str - The input string
  * @returns {string} - The reversed string
  */
-export function reverseString(str) {
+function reverseString(str) {
   if (typeof str !== "string") {
     throw new TypeError("Input must be a string");
   }
@@ -15,7 +15,7 @@ export function reverseString(str) {
  * @param {string} str - The input string
  * @returns {boolean} - True if the string is a palindrome
  */
-export function isPalindrome(str) {
+function isPalindrome(str) {
   if (typeof str !== "string") {
     throw new TypeError("Input must be a string");
   }
@@ -29,7 +29,7 @@ export function isPalindrome(str) {
  * @param {number} maxLength - Maximum length
  * @returns {string} - The truncated string
  */
-export function truncate(str, maxLength) {
+function truncate(str, maxLength) {
   if (typeof str !== "string") {
     throw new TypeError("Input must be a string");
   }
@@ -42,3 +42,9 @@ export function truncate(str, maxLength) {
   }
   return str.slice(0, maxLength) + "...";
 }
+
+module.exports = {
+  reverseString,
+  isPalindrome,
+  truncate,
+};
